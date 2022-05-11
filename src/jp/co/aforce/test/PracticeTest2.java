@@ -22,6 +22,7 @@ public class PracticeTest2 {
 		System.out.println(num);
 
 		//練習問題④
+		//インクリメント演算子
 		num++;
 		System.out.println(num);
 

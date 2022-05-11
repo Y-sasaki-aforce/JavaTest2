@@ -11,7 +11,7 @@ public class PracticeTest8 {
 
 
 		//練習問題②
-		void printRandomMessage() {
+		public void printRandomMessage() {
 			int n = (int)(3 * Math.random());
 			if(n == 0) {
 				System.out.println("こんばんは");
@@ -24,13 +24,13 @@ public class PracticeTest8 {
 
 
 		//練習問題③
-		void printMessage(String message) {
+		public void printMessage(String message) {
 			System.out.println(message);
 		}
 
 
 		//練習問題④
-		void printMessage(String message, int count) {
+		public void printMessage(String message, int count) {
 			for(int i = 0;i < count;i++) {
 				System.out.println(message);
 			}
@@ -38,13 +38,13 @@ public class PracticeTest8 {
 
 
 		//練習問題⑤
-		void printRectangleArea(double height, double width) {
+		public void printRectangleArea(double height, double width) {
 			System.out.println("面積：" + height * width);
 		}
 
 
 		//練習問題⑥
-		String getWeatherForecast() {
+		public String getWeatherForecast() {
 			int a = (int)(3 * Math.random());
 			int b = (int)(4 * Math.random());
 			String date;
@@ -74,7 +74,7 @@ public class PracticeTest8 {
 
 
 		//練習問題⑦
-		boolean isEvenNumber(int value) {
+		public boolean isEvenNumber(int value) {
 			if(value % 2 == 0) {
 				return true;
 			}else {
@@ -84,9 +84,9 @@ public class PracticeTest8 {
 
 
 		//練習問題⑧
-		String getMessage(String name, boolean isKid) {
+		public String getMessage(String name, boolean isKid) {
 			String message;
-			if(isKid == true) {
+			if(isKid) {
 				message = "こんにちは。" + name + "ちゃん。";
 			}else {
 				message = "こんにちは。" + name + "さん。";
@@ -96,19 +96,23 @@ public class PracticeTest8 {
 
 
 		//練習問題⑨
-		String getLongestString(String[] array) {
-			String MaxLength = "";
-			for(int i = 0;i < array.length;i++) {
-				if(array[i].length() >= MaxLength.length()) {
-					MaxLength = array[i];
+		public String getLongestString(String[] array) {
+			String str = null;
+			int maxCount = array[0].length();
+
+			for(String arr : array) {
+				int arrCount = arr.length();
+				if(maxCount <= arrCount) {
+					maxCount = arrCount;
+					str = arr;
 				}
 			}
-			return MaxLength;
+			return str;
 		}
 
 
 		//練習問題⑩
-		boolean isAdult(Person person) {
+		public boolean isAdult(Person person) {
 			if(person.getAge() >= 20) {
 				return true;
 			}else {

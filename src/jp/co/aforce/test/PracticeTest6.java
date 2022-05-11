@@ -7,7 +7,7 @@ public class PracticeTest6 {
 		// TODO 自動生成されたメソッド・スタブ
 		//練習問題①
 		MinMax minMax = new MinMax();
-		int a = 4,b=2,c=10;
+		int a = 4, b=2, c=10;
 		System.out.println(a + "と"+b+"と"+c+"のうち、最大のものは"+minMax.getMaxValue(a,b,c));
 		System.out.println(a + "と"+b+"と"+c+"のうち、最小のものは"+minMax.getMinValue(a,b,c));
 

@@ -1,6 +1,7 @@
 package jp.co.aforce.test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class PracticeTest3 {
 
@@ -22,17 +23,29 @@ public class PracticeTest3 {
 
 
 		//練習問題⑤
-		String [] subject = {"国語", "数学","英語"};
+		/*String [] subject = {"国語", "数学","英語"};
 		int [] score = {90, 80,65};
 		// (1)
 		for (String string : subject) {
 			for (int scores : score) {
 			System.out.println(string + ":" +scores);
 			}
-		}
+		}*/
 
+		HashMap<String, Integer>scoresHashMap = new HashMap<>();
+
+		scoresHashMap.put("国語", 90);
+		scoresHashMap.put("数学", 80);
+		scoresHashMap.put("英語", 70);
+
+		for(HashMap.Entry<String, Integer>score:scoresHashMap.entrySet()) {
+				System.out.println(score.getKey()+":"+score.getValue());
+		}
 		//練習問題⑥
 		/*データを要素として格納するのにコードを簡素化できるから*/
+		
+		//
+
     }
 
 }

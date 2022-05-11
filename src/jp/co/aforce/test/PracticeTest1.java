@@ -23,6 +23,7 @@ public class PracticeTest1 {
 	このアクセス制御には private 、 protected 、 public という３つの 修飾子 を使います。*/
 
 	//練習問題⑤
-	/*privateアクセス修飾子*/
+	//デフォルト
+	//同一パッケージのクラスからのみ参照
 	}
 }
